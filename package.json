@@ -1,0 +1,37 @@
+{
+  "name": "stock-data-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/react": "^8.0.1",
+    "create-react-app": "^1.4.3",
+    "fetch-mock": "^9.0.0-beta.2",
+    "h8k-design": "^1.0.8",
+    "jest-dom": "^3.5.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-redux": "^7.2.2",
+    "react-scripts": "1.0.17",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "save": "^2.3.1"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "./node_modules/.bin/react-scripts start",
+    "build": "./node_modules/.bin/react-scripts build",
+    "deploy": "aws s3 cp build s3://stock-data-app --recursive",
+    "pretest": "npm install",
+    "test": "./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "expect": "^21.2.1",
+    "jest-junit": "^3.3.0",
+    "react-test-renderer": "^16.2.0"
+  }
+}
