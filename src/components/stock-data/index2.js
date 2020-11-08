@@ -35,7 +35,7 @@ class StockData2 extends Component {
           <li className="py-10">Low:{this.props.apiResponse.low}</li>
         </ul>) : ""}
         {
-          this.props.apiResponseStatus === false ? <div className="mt-50 slide-up-fade-in" id="no-result" data-testid="no-result">Good Evening, No Results Found for {this.state.date}, Please amend the date and try again.</div> : ""
+          this.props.apiResponseStatus === false ? <div className="mt-50 slide-up-fade-in" id="no-result" data-testid="no-result">Good Morning, No Results Found for {this.state.date}, Please amend the date and try again.</div> : ""
         }         
       </div>
     );
